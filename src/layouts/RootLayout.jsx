@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 function RootLayout() {
   return (
-    <div className="root-layout h-screen relative">
+    <div className="root-layout">
       <Header />
 
       <Outlet />
