@@ -4,10 +4,11 @@ import Footer from '../components/Footer';
 
 function RootLayout() {
   return (
-    <div className="root-layout">
+    <div className="h-screen">
       <Header />
-
-      <Outlet />
+      <main className="grid grid-cols-1 place-items-center my-16">
+        <Outlet />
+      </main>
 
       <Footer />
     </div>
