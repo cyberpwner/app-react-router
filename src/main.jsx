@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {
@@ -12,13 +12,16 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Github from './pages/Github/Github';
-import NotFound from './pages/NotFound';
+// import NotFound from './pages/NotFound';
 import UserDetails from './pages/Users/UserDetails';
 import usersLoader from './pages/Users/loaders/UsersLoader';
 import Users from './pages/Users/Users';
 import userDetailsLoader from './pages/Users/loaders/UserDetailsLoader';
 import githubLoader from './pages/Github/GithubLoader';
 import ErrorPage from './pages/ErrorPage';
+
+// lazy loading the not found page
+const LazyNotFound = lazy(() => import('./pages/NotFound'));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,7 +44,14 @@ const router = createBrowserRouter(
         />
       </Route>
 
-      <Route path="*" element={<NotFound />} />
+      <Route
+        path="*"
+        element={
+          <Suspense>
+            <LazyNotFound />
+          </Suspense>
+        }
+      />
     </Route>
   )
 );
