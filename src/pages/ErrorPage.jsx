@@ -5,8 +5,8 @@ function ErrorPage() {
 
   return (
     <section>
-      <h2>Error</h2>
-      <p>{message}</p>
+      <h2 className="text-8xl font-bold">Error</h2>
+      <p className="text-2xl ml-2">{message}</p>
     </section>
   );
 }
