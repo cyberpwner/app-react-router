@@ -9,7 +9,7 @@ function Users() {
         <Link
           to={`${id}`}
           key={id}
-          className="bg-orange-500 m-2 rounded-md text-white p-6 hover:bg-orange-600 hover:pl-8 transition-all"
+          className="bg-orange-500 dark:bg-orange-700 m-2 rounded-md text-white p-6 hover:bg-orange-600 hover:pl-8 transition-all"
         >
           <h3 className="text-2xl font-bold">{name}</h3>
           <p>{email}</p>

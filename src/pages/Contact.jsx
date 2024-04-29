@@ -1,18 +1,18 @@
 function Contact() {
   return (
-    <div className="relative flex items-top justify-center bg-white sm:items-center sm:pt-0">
+    <div className="relative flex items-top justify-center bg-transparent sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div className="mt-8 overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
-              <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
+            <div className="p-6 mr-2 bg-gray-100 dark:bg-transparent sm:rounded-lg">
+              <h1 className="text-3xl sm:text-4xl text-gray-800 dark:text-white font-extrabold tracking-tight">
                 Get in touch:
               </h1>
-              <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
+              <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 dark:text-white mt-2">
                 Fill in the form to start a conversation
               </p>
 
-              <div className="flex items-center mt-8 text-gray-600">
+              <div className="flex items-center mt-8 text-gray-600 dark:text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -20,7 +20,7 @@ function Contact() {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-gray-500 dark:text-gray-300"
                 >
                   <path
                     strokeLinecap="round"
@@ -40,7 +40,7 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center mt-4 text-gray-600">
+              <div className="flex items-center mt-4 text-gray-600 dark:text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -48,7 +48,7 @@ function Contact() {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-gray-500 dark:text-gray-300"
                 >
                   <path
                     strokeLinecap="round"
@@ -62,7 +62,7 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center mt-2 text-gray-600">
+              <div className="flex items-center mt-2 text-gray-600 dark:text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -70,7 +70,7 @@ function Contact() {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-500"
+                  className="w-8 h-8 text-gray-500 dark:text-gray-300"
                 >
                   <path
                     strokeLinecap="round"
@@ -95,7 +95,7 @@ function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-500 dark:text-white dark:placeholder-gray-200 border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
 
@@ -108,7 +108,7 @@ function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-500 dark:text-white dark:placeholder-gray-200 border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
 
@@ -121,7 +121,7 @@ function Contact() {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-500 dark:text-white dark:placeholder-gray-200 border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
 
