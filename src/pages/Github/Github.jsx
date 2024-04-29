@@ -10,7 +10,7 @@ function Github() {
   } = useLoaderData();
 
   return (
-    <section className="w-1/2 bg-gray-50 dark:bg-gray-600 text-white p-8 border border-gray-500 rounded-md grid grid-cols-[auto,1fr] gap-10">
+    <section className="w-1/2 bg-gray-50 dark:bg-gray-600 dark:text-white p-8 border border-gray-500 rounded-md grid grid-cols-[auto,1fr] gap-10">
       <img
         src={avatarUrl}
         alt="Avatar"
