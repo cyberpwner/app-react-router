@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import logo from '../../public/logo.png';
+
 function Footer() {
   return (
     <footer className="bg-white border-y w-full">
@@ -7,11 +9,7 @@ function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <img
-                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                className="mr-3 h-16"
-                alt="Logo"
-              />
+              <img src={logo} className="mr-3 h-16" alt="Logo" />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
